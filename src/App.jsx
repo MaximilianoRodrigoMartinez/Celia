@@ -42,7 +42,7 @@ function App() {
         <p>Velas y Artesanías Hechas con Amor</p>
         <div className="footer-contact">
           <p>Consultas por WhatsApp</p>
-          <p>© 2024 - Todos los derechos reservados</p>
+          <p>© 2025 - Todos los derechos reservados</p>
         </div>
       </footer>
     </div>

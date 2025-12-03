@@ -34,10 +34,11 @@
 }
 
 .filter-btn:hover {
-  background: #f5c6cb;
+  background: #d63384;
   color: white;
+  border-color: #d63384;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(245, 198, 203, 0.4);
+  box-shadow: 0 4px 12px rgba(214, 51, 132, 0.4);
 }
 
 .filter-btn.active {
