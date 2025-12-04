@@ -109,6 +109,33 @@ export const products = [
     categoria: "centros",
     imagen: "/assets/15.jpg",
     whatsapp: "5491122714366"
+  },
+  {
+    id: 16,
+    nombre: "Centro de Mesa en Copas de Agua",
+    descripcion: "Centro de mesa en copas de agua, decoración navideña. Velón de soja varios aromas. Duración 12 hrs.",
+    precio: "15000",
+    categoria: "centros",
+    imagen: "/assets/16.png",
+    whatsapp: "5491122714366"
+  },
+  {
+    id: 17,
+    nombre: "Copa de Sidra Navideña",
+    descripcion: "Copa de Sidra de vela de soja decorada con motivos navideños. Varios aromas.",
+    precio: "12000",
+    categoria: "velas",
+    imagen: "/assets/17.png",
+    whatsapp: "5491122714366"
+  },
+  {
+    id: 18,
+    nombre: "Flor de Loto de Yeso",
+    descripcion: "Flor de loto de yeso, con vela de soja, diferentes aromas y colores.",
+    precio: "5500",
+    categoria: "velas",
+    imagen: "/assets/18.png",
+    whatsapp: "5491122714366"
   }
 ]
 
