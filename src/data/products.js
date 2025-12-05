@@ -121,9 +121,9 @@ export const products = [
   },
   {
     id: 17,
-    nombre: "Copa de Sidra Navideña",
-    descripcion: "Copa de Sidra de vela de soja decorada con motivos navideños. Varios aromas.",
-    precio: "12000",
+    nombre: "Vela Violeta - Pimienta Naranja",
+    descripcion: "Vela artesanal elaborada con cera de soja 100% natural. Su aroma Pimienta Naranja combina notas cítricas frescas con un toque especiado que aporta energía y calidez al ambiente. Ofrece una combustión limpia, uniforme y de larga duración. Ideal para aromatizar y decorar cualquier espacio. Contenido: 170 g.",
+    precio: "8500",
     categoria: "velas",
     imagen: "/assets/17.png",
     whatsapp: "5491122714366"
