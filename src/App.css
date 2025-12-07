@@ -2,6 +2,13 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-top: 140px;
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding-top: 120px;
+  }
 }
 
 .hero-section {

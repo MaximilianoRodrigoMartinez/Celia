@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import ProductCard from './components/ProductCard'
 import Header from './components/Header'
 import FAQ from './components/FAQ'
+import ScrollToTop from './components/ScrollToTop'
 import { products } from './data/products'
 import './App.css'
 
@@ -52,6 +53,8 @@ function App() {
       </div>
 
       <FAQ />
+
+      <ScrollToTop />
 
       <footer className="footer">
         <div className="footer-title">Celia</div>
