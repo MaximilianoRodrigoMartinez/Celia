@@ -75,6 +75,15 @@ export const products = [
     whatsapp: "5491122714366"
   },
   {
+    id: 9,
+    nombre: "Set Figuras Abstractas en Yeso + Bandeja",
+    descripcion: "Dale un toque moderno a tus espacios con este set decorativo de tres figuras abstractas en yeso, color negro mate. Vienen sobre una bandeja blanca que resalta el contraste y aporta elegancia. Ideal para livings, escritorios, estanterías o como regalo especial.",
+    precio: "7500",
+    categoria: "sets",
+    imagen: "/assets/9.png",
+    whatsapp: "5491122714366"
+  },
+  {
     id: 11,
     nombre: "Vaso Plateado",
     descripcion: "Vaso plateado, vela de soja en varios aromas, 200 g, duración de la vela de 14 a 24 horas.",
