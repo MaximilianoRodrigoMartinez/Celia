@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import ProductCard from './components/ProductCard'
 import Header from './components/Header'
+import FAQ from './components/FAQ'
 import { products } from './data/products'
 import './App.css'
 
@@ -21,10 +22,11 @@ function App() {
         <div className="hero-content">
           <h2 className="hero-title">Artesanía 100% Natural</h2>
           <p className="hero-text">
-            Cada pieza está elaborada artesanalmente con cera de soja 100% natural, 
-            <strong> libre de químicos y tóxicos</strong>. Nuestras velas y artesanías 
-            no solo decoran tu hogar, sino que también cuidan de tu bienestar y el de tu familia. 
-            Descubrí productos únicos, hechos con amor y dedicación.
+            Ofrecemos velas y artesanías elaboradas con <strong>cera de soja 100% natural</strong>, 
+            <strong> libre de químicos agresivos, parabenos y tóxicos</strong>. Cada pieza está 
+            pensada para cuidar tu bienestar y el de tu familia, respetando el medio ambiente. 
+            Si tenés dudas sobre qué producto elegir o querés conocer más detalles, 
+            <strong> no dudes en consultarnos</strong> — estamos para ayudarte.
           </p>
         </div>
       </div>
@@ -48,6 +50,8 @@ function App() {
           ))}
         </div>
       </div>
+
+      <FAQ />
 
       <footer className="footer">
         <div className="footer-title">Celia</div>
