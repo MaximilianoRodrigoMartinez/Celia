@@ -19,7 +19,7 @@ function App() {
     <div className="app">
       <Header />
       
-      <div className="hero-section">
+      <div id="inicio" className="hero-section">
         <div className="hero-content">
           <h2 className="hero-title">Artesanía 100% Natural</h2>
           <p className="hero-text">
@@ -32,7 +32,7 @@ function App() {
         </div>
       </div>
 
-      <div className="container">
+      <div id="productos" className="container">
         <div className="filters">
           {categories.map(cat => (
             <button
@@ -52,7 +52,15 @@ function App() {
         </div>
       </div>
 
-      <FAQ />
+      <div id="faq">
+        <FAQ />
+      </div>
+
+      <div className="scroll-divider">
+        <div className="scroll-divider-line"></div>
+        <div className="scroll-divider-flower">🌸</div>
+        <div className="scroll-divider-line"></div>
+      </div>
 
       <ScrollToTop />
 

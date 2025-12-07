@@ -26,12 +26,6 @@ function ScrollToTop() {
 
   return (
     <>
-      <div className="scroll-divider">
-        <div className="scroll-divider-line"></div>
-        <div className="scroll-divider-flower">🌸</div>
-        <div className="scroll-divider-line"></div>
-      </div>
-      
       {isVisible && (
         <button 
           className="scroll-to-top"

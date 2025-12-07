@@ -6,6 +6,7 @@
   padding: 2rem 1rem;
   background: rgba(255, 255, 255, 0.95);
   margin: 0;
+  border-top: 1px solid #f5c6cb;
 }
 
 .scroll-divider-line {
@@ -83,12 +84,5 @@
     right: 20px;
   }
 
-  .scroll-divider {
-    padding: 1.5rem 1rem;
-  }
-
-  .scroll-divider-flower {
-    font-size: 1.2rem;
-  }
 }
 
