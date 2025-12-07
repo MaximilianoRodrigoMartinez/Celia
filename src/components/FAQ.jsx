@@ -10,19 +10,19 @@ function FAQ() {
       questions: [
         {
           q: "¿Qué tipo de productos ofrecen?",
-          a: "Ofrecemos velas y artesanías elaboradas con cera de soja 100% natural, libres de químicos agresivos, parabenos y tóxicos. Nuestros productos incluyen velas aromáticas, centros de mesa, sets decorativos y artesanías únicas."
+          a: "Ofrecemos productos artesanales elaborados con ingredientes 100% naturales, libres de químicos agresivos, parabenos y tóxicos. Nuestro catálogo incluye velas aromáticas, artesanías decorativas, cosmética natural, jabones artesanales, shampoos y productos de cuidado personal, todos hechos con amor y dedicación."
         },
         {
-          q: "¿Los productos son aptos para personas con sensibilidad a fragancias?",
-          a: "Sí. Nuestras velas están elaboradas con ingredientes naturales y esencias suaves. Si tenés dudas puntuales o sensibilidad específica, podés consultarnos antes de comprar y te ayudamos a elegir el producto más adecuado."
+          q: "¿Los productos son aptos para personas con sensibilidad a fragancias o piel sensible?",
+          a: "Sí. Todos nuestros productos están elaborados con ingredientes naturales y esencias suaves. Si tenés dudas puntuales, sensibilidad específica o piel sensible, podés consultarnos antes de comprar y te ayudamos a elegir el producto más adecuado para vos."
         },
         {
           q: "¿Los productos son respetuosos con el medio ambiente?",
-          a: "Sí. Priorizamos ingredientes naturales y éticos. Nuestras velas de soja son biodegradables y no contienen químicos que dañen el medio ambiente. Además, nuestros productos están pensados para ser duraderos y reutilizables."
+          a: "Sí. Priorizamos ingredientes naturales y éticos. Nuestros productos son biodegradables y no contienen químicos que dañen el medio ambiente. Además, están pensados para ser duraderos y, cuando es posible, reutilizables. Cuidamos tanto tu bienestar como el del planeta."
         },
         {
           q: "¿Cómo sé qué producto me conviene según mi necesidad?",
-          a: "Podés revisar la descripción de cada producto, donde detallamos sus características, aromas disponibles y duración. Si tenés dudas sobre qué producto elegir para tu espacio o necesidad específica, escribinos por WhatsApp y te asesoramos personalmente."
+          a: "Podés revisar la descripción de cada producto, donde detallamos sus características, ingredientes, aromas disponibles y beneficios. Si tenés dudas sobre qué producto elegir para tu tipo de piel, espacio o necesidad específica, escribinos por WhatsApp y te asesoramos personalmente."
         }
       ]
     },

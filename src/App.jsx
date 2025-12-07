@@ -21,10 +21,10 @@ function App() {
       
       <div id="inicio" className="hero-section">
         <div className="hero-content">
-          <h2 className="hero-title">Artesanía 100% Natural</h2>
+          <h2 className="hero-title">Productos 100% Naturales</h2>
           <p className="hero-text">
-            Ofrecemos velas y artesanías elaboradas con <strong>cera de soja 100% natural</strong>, 
-            <strong> libre de químicos agresivos, parabenos y tóxicos</strong>. Cada pieza está 
+            Ofrecemos productos artesanales elaborados con <strong>ingredientes 100% naturales</strong>, 
+            <strong> libres de químicos agresivos, parabenos y tóxicos</strong>. Cada pieza está 
             pensada para cuidar tu bienestar y el de tu familia, respetando el medio ambiente. 
             Si tenés dudas sobre qué producto elegir o querés conocer más detalles, 
             <strong> no dudes en consultarnos</strong> — estamos para ayudarte.
