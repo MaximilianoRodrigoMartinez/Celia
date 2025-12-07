@@ -125,6 +125,48 @@
   margin-top: 1rem;
 }
 
+.scroll-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  margin: 0;
+  border-top: 1px solid #f5c6cb;
+}
+
+.scroll-divider-line {
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #f5c6cb, transparent);
+  max-width: 200px;
+}
+
+.scroll-divider-flower {
+  font-size: 1.5rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .scroll-divider {
+    padding: 1.5rem 1rem;
+  }
+
+  .scroll-divider-flower {
+    font-size: 1.2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-section {
     padding: 2rem 1rem;
