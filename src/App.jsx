@@ -8,12 +8,17 @@ import './App.css'
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('todos')
+  const [searchText, setSearchText] = useState('')
 
   const categories = ['todos', ...new Set(products.map(p => p.categoria))]
 
-  const filteredProducts = selectedCategory === 'todos' 
-    ? products 
-    : products.filter(p => p.categoria === selectedCategory)
+  const filteredProducts = products.filter(product => {
+    const matchesCategory = selectedCategory === 'todos' || product.categoria === selectedCategory
+    const matchesSearch = searchText === '' || 
+      product.nombre.toLowerCase().includes(searchText.toLowerCase()) ||
+      product.descripcion.toLowerCase().includes(searchText.toLowerCase())
+    return matchesCategory && matchesSearch
+  })
 
   return (
     <div className="app">
@@ -33,6 +38,16 @@ function App() {
       </div>
 
       <div id="productos" className="container">
+        <div className="search-container">
+          <input
+            type="text"
+            className="search-input"
+            placeholder="Buscar productos..."
+            value={searchText}
+            onChange={(e) => setSearchText(e.target.value)}
+          />
+        </div>
+
         <div className="filters">
           {categories.map(cat => (
             <button
@@ -45,11 +60,17 @@ function App() {
           ))}
         </div>
 
-        <div className="products-grid">
-          {filteredProducts.map(product => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
+        {filteredProducts.length > 0 ? (
+          <div className="products-grid">
+            {filteredProducts.map(product => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        ) : (
+          <div className="no-results">
+            <p>No se encontraron productos que coincidan con tu búsqueda.</p>
+          </div>
+        )}
       </div>
 
       <div id="faq">
