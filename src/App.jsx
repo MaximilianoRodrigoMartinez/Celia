@@ -66,7 +66,7 @@ function App() {
 
       <footer className="footer">
         <div className="footer-title">Celia</div>
-        <p>Velas y Artesanías Hechas con Amor</p>
+        <p>Productos Naturales Hechos con Amor</p>
         <div className="footer-contact">
           <p>Consultas por WhatsApp</p>
           <p>© 2025 - Todos los derechos reservados</p>
