@@ -61,7 +61,13 @@ function FAQ() {
       questions: [
         {
           q: "¿Cómo puedo contactarlos si tengo dudas?",
-          a: "Podés escribirnos por WhatsApp haciendo clic en el botón de cualquier producto, o contactarnos directamente. Estamos disponibles para responder todas tus consultas y ayudarte a elegir el producto perfecto."
+          a: "Podés escribirnos por ",
+          aLinks: [
+            { text: "WhatsApp", href: "https://wa.me/5491122714366", target: "_blank" },
+            { text: " o ", href: null },
+            { text: "Instagram", href: "https://www.instagram.com/celia.cosmetica/", target: "_blank" },
+            { text: ". Estamos disponibles para responder todas tus consultas y ayudarte a elegir el producto perfecto.", href: null }
+          ]
         },
         {
           q: "¿Aceptan consultas antes de comprar?",
@@ -96,7 +102,30 @@ function FAQ() {
                   </button>
                   {openIndex === globalIndex && (
                     <div className="faq-answer">
-                      <p>{faq.a}</p>
+                      <p>
+                        {faq.aLinks ? (
+                          <>
+                            {faq.a}
+                            {faq.aLinks.map((link, linkIndex) => 
+                              link.href ? (
+                                <a
+                                  key={linkIndex}
+                                  href={link.href}
+                                  target={link.target || "_self"}
+                                  rel={link.target === "_blank" ? "noopener noreferrer" : ""}
+                                  className="faq-link"
+                                >
+                                  {link.text}
+                                </a>
+                              ) : (
+                                <span key={linkIndex}>{link.text}</span>
+                              )
+                            )}
+                          </>
+                        ) : (
+                          faq.a
+                        )}
+                      </p>
                     </div>
                   )}
                 </div>

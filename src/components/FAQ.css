@@ -109,6 +109,19 @@
   font-size: 0.95rem;
 }
 
+.faq-link {
+  color: #d63384;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.faq-link:hover {
+  color: #c02d75;
+  border-bottom-color: #c02d75;
+}
+
 @media (max-width: 768px) {
   .faq-section {
     padding: 3rem 1rem;
