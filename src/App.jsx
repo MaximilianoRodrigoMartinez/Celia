@@ -89,7 +89,7 @@ function App() {
         <div className="footer-title">Celia</div>
         <p>Productos Naturales Hechos con Amor</p>
         <div className="footer-contact">
-          <p>Consultas por WhatsApp</p>
+          <p>Consultas por <a href="https://wa.me/5491122714366" target="_blank" rel="noopener noreferrer" style={{ color: '#d63384', textDecoration: 'none', fontWeight: '600' }}>WhatsApp</a></p>
           <p>© 2025 - Todos los derechos reservados</p>
         </div>
       </footer>
