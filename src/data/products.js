@@ -51,7 +51,7 @@ export const products = [
     id: 6,
     nombre: "Velón Venado",
     descripcion: "Añade un toque natural y elegante a tu decoración con estos encantadores velones en forma de venado. Cada pieza contiene 160 gramos de cera de soja artesanal, disponible en diferentes colores y aromas. Con una duración excepcional de entre 13 y 24 horas, son perfectos para crear un ambiente acogedor y relajante.",
-    precio: "7500",
+    precio: "9500",
     categoria: "velas",
     imagen: "/assets/6.png",
     whatsapp: "5491122714366"
