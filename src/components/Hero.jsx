@@ -1,28 +1,9 @@
 import React from 'react'
 import './Hero.css'
 
-function Hero({ heroProducts = [] }) {
-  if (heroProducts.length === 0) return null
-
+function Hero() {
   return (
     <div id="inicio" className="hero-section">
-      <div className="hero-collage">
-        <div className="hero-collage-inner">
-          {heroProducts.map((product, index) => (
-            <div
-              key={product.id}
-              className={`hero-collage-item hero-collage-item-${index + 1}`}
-            >
-              <img
-                src={product.imagen}
-                alt={product.nombre}
-                className="hero-collage-img"
-              />
-            </div>
-          ))}
-        </div>
-        <div className="hero-collage-overlay" aria-hidden="true" />
-      </div>
       <div className="hero-copy-wrap">
         <h2 className="hero-title">Productos naturales y artesanías</h2>
         <p className="hero-text">

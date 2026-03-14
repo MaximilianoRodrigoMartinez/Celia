@@ -9,7 +9,6 @@ import ScrollToTop from './components/ScrollToTop'
 import { products } from './data/products'
 import './App.css'
 
-const HERO_PRODUCT_IDS = [4, 18, 9]
 const CATEGORY_ORDER = ['sets', 'velas', 'centros']
 
 function App() {
@@ -17,10 +16,6 @@ function App() {
   const [searchText, setSearchText] = useState('')
 
   const categories = ['todos', ...new Set(products.map(p => p.categoria))]
-
-  const heroProducts = useMemo(() => {
-    return HERO_PRODUCT_IDS.map(id => products.find(p => p.id === id)).filter(Boolean)
-  }, [])
 
   const filteredProducts = products.filter(product => {
     const matchesCategory = selectedCategory === 'todos' || product.categoria === selectedCategory
@@ -62,7 +57,7 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <Hero heroProducts={heroProducts} />
+      <Hero />
       <WaveDivider className="hero-wave" fill="#ffffff" />
 
       <div id="productos" className="container">
