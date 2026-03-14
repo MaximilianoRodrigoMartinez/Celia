@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import './ProductCard.css'
 
-function ProductCard({ product }) {
+function ProductCard({ product, featured = false }) {
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isHovered, setIsHovered] = useState(false)
+  const hasEncendida = Boolean(product.imagenEncendida ?? product.imagenGif)
+  const showGlow = !hasEncendida && product.categoria === 'velas' && isHovered
 
   const formatPrice = (price) => {
     return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')
@@ -26,14 +29,33 @@ function ProductCard({ product }) {
 
   return (
     <>
-      <div className="product-card">
-        <div className="product-image-container" onClick={handleImageClick}>
+      <div className={`product-card${featured ? ' featured' : ''}`}>
+        <div
+          className={`product-image-container${product.textura ? ` texture-${product.textura}` : ''}${showGlow ? ' product-image-container--glow' : ''}`}
+          onClick={handleImageClick}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          onTouchStart={() => setIsHovered(true)}
+          onTouchEnd={() => setIsHovered(false)}
+        >
+          <div className="product-image-shadow" aria-hidden="true" />
           <img 
             src={product.imagen} 
             alt={product.nombre}
-            className="product-image"
+            className={`product-image${isHovered && hasEncendida ? ' product-image--hidden' : ''}`}
             loading="lazy"
           />
+          {hasEncendida && (
+            <img
+              src={product.imagenEncendida ?? product.imagenGif}
+              alt={`${product.nombre} encendido`}
+              className={`product-image product-image-hover${isHovered ? ' product-image-hover--visible' : ''}`}
+            />
+          )}
+          {showGlow && <div className="product-candle-glow" aria-hidden="true" />}
+          {product.precio && (
+            <span className="product-price-badge">${formatPrice(product.precio)}</span>
+          )}
           {product.categoria && (
             <span className="product-category">{product.categoria}</span>
           )}
@@ -43,9 +65,6 @@ function ProductCard({ product }) {
         <h3 className="product-name">{product.nombre}</h3>
         {product.descripcion && (
           <p className="product-description">{product.descripcion}</p>
-        )}
-        {product.precio && (
-          <p className="product-price">${formatPrice(product.precio)}</p>
         )}
         
         <button 
@@ -77,6 +96,12 @@ function ProductCard({ product }) {
             alt={product.nombre}
             className="image-modal-image"
           />
+          <div className="image-modal-info">
+            <h3 className="image-modal-title">{product.nombre}</h3>
+            {product.precio && (
+              <p className="image-modal-price">${formatPrice(product.precio)}</p>
+            )}
+          </div>
         </div>
       </div>
     )}

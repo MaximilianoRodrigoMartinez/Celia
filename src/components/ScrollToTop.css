@@ -6,13 +6,13 @@
   padding: 2rem 1rem;
   background: rgba(255, 255, 255, 0.95);
   margin: 0;
-  border-top: 1px solid #f5c6cb;
+  border-top: 1px solid var(--color-primary-light);
 }
 
 .scroll-divider-line {
   flex: 1;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #f5c6cb, transparent);
+  background: linear-gradient(90deg, transparent, var(--color-primary-light), transparent);
   max-width: 200px;
 }
 
@@ -36,7 +36,7 @@
   right: 30px;
   width: 50px;
   height: 50px;
-  background: #d63384;
+  background: var(--color-primary);
   color: white;
   border: none;
   border-radius: 50%;
@@ -44,7 +44,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 15px rgba(214, 51, 132, 0.4);
+  box-shadow: 0 4px 15px rgba(var(--color-primary-rgb), 0.4);
   transition: all 0.3s ease;
   z-index: 999;
   animation: fadeInUp 0.3s ease;
@@ -62,9 +62,9 @@
 }
 
 .scroll-to-top:hover {
-  background: #c02d75;
+  background: var(--color-primary-dark);
   transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(214, 51, 132, 0.6);
+  box-shadow: 0 6px 20px rgba(var(--color-primary-rgb), 0.6);
 }
 
 .scroll-to-top:active {

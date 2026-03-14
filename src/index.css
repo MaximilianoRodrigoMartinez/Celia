@@ -1,3 +1,11 @@
+:root {
+  --color-primary: #2d4a3e;
+  --color-primary-light: #c5d1c8;
+  --color-primary-bg: #e8ebe6;
+  --color-primary-rgb: 45, 74, 62;
+  --color-primary-dark: #243d32;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +16,7 @@ html {
   margin: 0;
   padding: 0;
   width: 100%;
-  background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 50%, #ffeaa7 100%);
+  background: linear-gradient(135deg, var(--color-primary-bg) 0%, var(--color-primary-light) 50%, #d4ddce 100%);
   overflow-x: hidden;
 }
 
@@ -18,7 +26,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 50%, #ffeaa7 100%);
+  background: linear-gradient(135deg, var(--color-primary-bg) 0%, var(--color-primary-light) 50%, #d4ddce 100%);
   min-height: 100vh;
   color: #333;
   margin: 0;

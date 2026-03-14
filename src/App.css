@@ -11,38 +11,6 @@
   }
 }
 
-.hero-section {
-  background: rgba(255, 255, 255, 0.95);
-  padding: 3rem 1rem;
-  text-align: center;
-  border-bottom: 3px solid #f5c6cb;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-}
-
-.hero-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.hero-title {
-  font-size: 2rem;
-  color: #d63384;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  letter-spacing: 1px;
-}
-
-.hero-text {
-  font-size: 1.1rem;
-  color: #6c757d;
-  line-height: 1.8;
-  margin: 0;
-}
-
-.hero-text strong {
-  color: #d63384;
-  font-weight: 600;
-}
 
 .container {
   max-width: 1200px;
@@ -61,7 +29,7 @@
   width: 100%;
   max-width: 500px;
   padding: 0.8rem 1.5rem;
-  border: 2px solid #f5c6cb;
+  border: 2px solid var(--color-primary-light);
   border-radius: 25px;
   font-size: 1rem;
   color: #6c757d;
@@ -73,8 +41,8 @@
 }
 
 .search-input:focus {
-  border-color: #d63384;
-  box-shadow: 0 4px 12px rgba(214, 51, 132, 0.3);
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 12px rgba(var(--color-primary-rgb), 0.3);
   background: rgba(255, 255, 255, 1);
 }
 
@@ -92,9 +60,9 @@
 
 .filter-btn {
   padding: 0.6rem 1.8rem;
-  border: 2px solid #f5c6cb;
+  border: 2px solid var(--color-primary-light);
   background: rgba(255, 255, 255, 0.9);
-  color: #d63384;
+  color: var(--color-primary);
   border-radius: 25px;
   cursor: pointer;
   font-size: 0.95rem;
@@ -105,26 +73,31 @@
 }
 
 .filter-btn:hover {
-  background: #d63384;
+  background: var(--color-primary);
   color: white;
-  border-color: #d63384;
+  border-color: var(--color-primary);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(214, 51, 132, 0.4);
+  box-shadow: 0 4px 12px rgba(var(--color-primary-rgb), 0.4);
 }
 
 .filter-btn.active {
-  background: #d63384;
+  background: var(--color-primary);
   color: white;
-  border-color: #d63384;
+  border-color: var(--color-primary);
   font-weight: 600;
-  box-shadow: 0 4px 12px rgba(214, 51, 132, 0.4);
+  box-shadow: 0 4px 12px rgba(var(--color-primary-rgb), 0.4);
 }
 
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 2rem;
+  align-items: start;
+}
+
+.products-grid .product-card.featured {
+  grid-column: span 2;
 }
 
 .no-results {
@@ -138,12 +111,21 @@
   margin: 0;
 }
 
+.hero-wave {
+  width: 100%;
+}
+
+.faq-wave {
+  width: 100%;
+  margin-top: -1px;
+}
+
 .footer {
   text-align: center;
   padding: 2.5rem 1rem;
   color: #6c757d;
   background: rgba(255, 255, 255, 0.95);
-  border-top: 3px solid #f5c6cb;
+  border-top: 3px solid var(--color-primary-light);
   box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
 }
 
@@ -155,7 +137,7 @@
 
 .footer .footer-title {
   font-size: 1.3rem;
-  color: #d63384;
+  color: var(--color-primary);
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
@@ -166,6 +148,16 @@
   margin-top: 1rem;
 }
 
+.footer-whatsapp-link {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-whatsapp-link:hover {
+  text-decoration: underline;
+}
+
 .scroll-divider {
   display: flex;
   align-items: center;
@@ -174,13 +166,13 @@
   padding: 2rem 1rem;
   background: rgba(255, 255, 255, 0.95);
   margin: 0;
-  border-top: 1px solid #f5c6cb;
+  border-top: 1px solid var(--color-primary-light);
 }
 
 .scroll-divider-line {
   flex: 1;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #f5c6cb, transparent);
+  background: linear-gradient(90deg, transparent, var(--color-primary-light), transparent);
   max-width: 200px;
 }
 
@@ -209,26 +201,17 @@
 }
 
 @media (max-width: 768px) {
-  .hero-section {
-    padding: 2rem 1rem;
-  }
-
-  .hero-title {
-    font-size: 1.6rem;
-  }
-
-  .hero-text {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-
   .container {
     padding: 1rem 0.5rem;
   }
 
   .products-grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+
+  .products-grid .product-card.featured {
+    grid-column: span 1;
   }
 
   .filters {

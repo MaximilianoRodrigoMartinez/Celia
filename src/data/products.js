@@ -9,7 +9,8 @@ export const products = [
     precio: "15000",
     categoria: "centros",
     imagen: "/assets/1.png",
-    whatsapp: "5491122714366"
+    whatsapp: "5491122714366",
+    textura: "madera"
   },
   {
     id: 2,
@@ -54,7 +55,8 @@ export const products = [
     precio: "9500",
     categoria: "velas",
     imagen: "/assets/6.png",
-    whatsapp: "5491122714366"
+    whatsapp: "5491122714366",
+    textura: "musgo"
   },
   {
     id: 7,
@@ -81,7 +83,8 @@ export const products = [
     precio: "7500",
     categoria: "sets",
     imagen: "/assets/9.png",
-    whatsapp: "5491122714366"
+    whatsapp: "5491122714366",
+    textura: "marmol"
   },
   {
     id: 11,
@@ -108,7 +111,8 @@ export const products = [
     precio: "8000",
     categoria: "velas",
     imagen: "/assets/13.png",
-    whatsapp: "5491122714366"
+    whatsapp: "5491122714366",
+    textura: "lino"
   },
   {
     id: 15,

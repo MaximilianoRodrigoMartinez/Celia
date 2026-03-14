@@ -44,7 +44,7 @@ function Header() {
           />
           <h1 onClick={() => scrollToSection('inicio')} style={{ cursor: 'pointer' }}>Celia</h1>
         </div>
-        <p className="subtitle">Productos Naturales Hechos con Amor</p>
+        <p className="subtitle">Productos naturales y artesanías hechos con amor</p>
         
         <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
           <ul className="nav-links">
