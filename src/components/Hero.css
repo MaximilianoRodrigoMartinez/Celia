@@ -96,18 +96,18 @@
 
 .hero-copy-wrap {
   position: absolute;
-  bottom: 0;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   width: 100%;
   max-width: 900px;
   padding: 1.5rem 2rem 2rem;
-  background: rgba(var(--color-primary-rgb), 0.80);
+  background: rgba(var(--color-primary-rgb), 0.55);
   -webkit-backdrop-filter: blur(14px);
-  backdrop-filter: blur(14px);
-  border-radius: 24px 24px 24px 24px;
+  backdrop-filter: blur(5px);
+  border-radius: 24px;
   z-index: 2;
-  box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
 }
 
 .hero-copy-wrap .hero-title {
@@ -135,7 +135,7 @@
 }
 
 .hero-title {
-  font-size: 2rem;
+  font-size: 3.5rem;
   color: var(--color-primary);
   font-weight: 700;
   margin-bottom: 1rem;
@@ -156,12 +156,12 @@
 
 @media (max-width: 768px) {
   .hero-collage {
-    min-height: 220px;
-    aspect-ratio: 1.5 / 1;
+    min-height: 200px;
+    aspect-ratio: 1.4 / 1;
   }
 
   .hero-collage-inner {
-    padding: 0.75rem 1rem;
+    padding: 0.25rem 0.75rem 0.75rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
@@ -169,6 +169,7 @@
   .hero-collage-item-1 {
     grid-column: 1;
     grid-row: 1 / -1;
+    align-self: start;
   }
 
   .hero-collage-item-2 {
@@ -187,7 +188,7 @@
 
   .hero-copy-wrap {
     padding: 1rem 1.25rem 1.5rem;
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px;
   }
 
   .hero-copy-wrap .hero-title {

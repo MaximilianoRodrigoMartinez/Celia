@@ -9,7 +9,7 @@ import ScrollToTop from './components/ScrollToTop'
 import { products } from './data/products'
 import './App.css'
 
-const HERO_PRODUCT_IDS = [4, 9, 18]
+const HERO_PRODUCT_IDS = [4, 18, 9]
 const CATEGORY_ORDER = ['sets', 'velas', 'centros']
 
 function App() {
