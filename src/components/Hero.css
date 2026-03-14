@@ -80,10 +80,10 @@
 }
 
 @media (min-width: 769px) {
-  /* Fibonacci 1 : 2 — última (item 3) la más grande */
+  /* Fibonacci columnas 1 : 2 (última más grande); filas iguales para que se vean las 3 */
   .hero-collage-inner {
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     gap: 0.5rem;
     padding: 1rem 1.5rem;
   }
@@ -194,7 +194,7 @@
   .hero-collage-inner {
     padding: 0.25rem 0.75rem 0.75rem;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     align-content: center;
   }
 
