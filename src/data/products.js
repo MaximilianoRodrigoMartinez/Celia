@@ -9,8 +9,7 @@ export const products = [
     precio: "15000",
     categoria: "centros",
     imagen: "/assets/1.png",
-    whatsapp: "5491122714366",
-    textura: "madera"
+    whatsapp: "5491122714366"
   },
   {
     id: 2,
@@ -55,8 +54,7 @@ export const products = [
     precio: "9500",
     categoria: "velas",
     imagen: "/assets/6.png",
-    whatsapp: "5491122714366",
-    textura: "musgo"
+    whatsapp: "5491122714366"
   },
   {
     id: 7,
