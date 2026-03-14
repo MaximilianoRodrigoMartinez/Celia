@@ -21,9 +21,9 @@
 .hero-collage {
   position: relative;
   width: 100%;
-  min-height: 280px;
-  aspect-ratio: 2.2 / 1;
-  max-height: 50vh;
+  min-height: 610px;
+  aspect-ratio: 2 / 1;
+  max-height: 58vh;
   overflow: hidden;
   z-index: 1;
 }
@@ -94,25 +94,35 @@
   pointer-events: none;
 }
 
-.hero-title-wrap {
+.hero-copy-wrap {
   position: absolute;
-  bottom: 1.5rem;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 85%;
-  padding: 1rem 3rem;
-  border-radius: 50%;
-  clip-path: ellipse(75% 50% at 50% 50%);
-  background: rgba(255, 255, 255, 0.4);
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
+  width: 100%;
+  max-width: 900px;
+  padding: 1.5rem 2rem 2rem;
+  background: rgba(var(--color-primary-rgb), 0.80);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border-radius: 24px 24px 24px 24px;
   z-index: 2;
+  box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.08);
 }
 
+.hero-copy-wrap .hero-title {
+  margin-bottom: 0.75rem;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
 
-.hero-title-wrap .hero-title {
+.hero-copy-wrap .hero-text {
   margin-bottom: 0;
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.hero-copy-wrap .hero-text strong {
+  color: #fff;
 }
 
 @keyframes heroGlow {
@@ -122,18 +132,6 @@
   50% {
     filter: brightness(1.06);
   }
-}
-
-.hero-content {
-  max-width: 800px;
-  margin: 0 auto 2rem;
-  padding: 2rem 1.5rem 3rem;
-  position: relative;
-  z-index: 1;
-  background: rgba(255, 255, 255, 0.5);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  border-radius: 24px;
 }
 
 .hero-title {
@@ -146,7 +144,7 @@
 
 .hero-text {
   font-size: 1.1rem;
-  color: #6c757d;
+  color: #374151;
   line-height: 1.8;
   margin: 0;
 }
@@ -187,17 +185,12 @@
     justify-self: end;
   }
 
-  .hero-content {
-    padding: 1.5rem 1rem 2rem;
-    border-radius: 20px;
+  .hero-copy-wrap {
+    padding: 1rem 1.25rem 1.5rem;
+    border-radius: 20px 20px 0 0;
   }
 
-  .hero-title-wrap {
-    bottom: 0.75rem;
-    padding: 0.5rem 1.25rem;
-  }
-
-  .hero-title-wrap .hero-title {
+  .hero-copy-wrap .hero-title {
     font-size: 1.25rem;
   }
 
