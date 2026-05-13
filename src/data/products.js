@@ -293,7 +293,7 @@ export const products = [
     nombre: "Vela geoda artesanal",
     descripcion:
       "Pieza única inspirada en la belleza de los cristales naturales. Elaborada artesanalmente con cera de soja, combina tonos violetas y rosas con destellos que realzan un diseño sofisticado. Estética tipo geoda, elegante y moderna. Ideal para decorar, regalar o acompañar momentos de relajación y armonía.",
-    precio: "5500",
+    precio: "20000",
     categoria: "velas",
     imagen: "/assets/33.jpeg",
     whatsapp: "5491122714366"
