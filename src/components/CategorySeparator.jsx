@@ -20,13 +20,20 @@ const CATEGORY_ICONS = {
       <path d="M12 2L4 7v10l8 5 8-5V7l-8-5z" />
       <path d="M12 22V12M4 7l8 5 8-5" />
     </svg>
+  ),
+  jabones: (
+    <svg className="category-separator-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M7 5h10a2 2 0 012 2v10a2 2 0 01-2 2H7a2 2 0 01-2-2V7a2 2 0 012-2z" />
+      <path d="M9 9h6M9 13h6" />
+    </svg>
   )
 }
 
 const CATEGORY_LABELS = {
   centros: 'Centros de mesa',
   velas: 'Velas',
-  sets: 'Sets'
+  sets: 'Sets',
+  jabones: 'Jabones artesanales'
 }
 
 function CategorySeparator({ category }) {

@@ -9,7 +9,7 @@ import ScrollToTop from './components/ScrollToTop'
 import { products } from './data/products'
 import './App.css'
 
-const CATEGORY_ORDER = ['sets', 'velas', 'centros']
+const CATEGORY_ORDER = ['sets', 'velas', 'centros', 'jabones']
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('todos')
