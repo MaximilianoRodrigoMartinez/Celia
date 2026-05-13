@@ -35,21 +35,12 @@ function App() {
     return order.filter(cat => groups[cat]?.length).map(cat => ({ category: cat, products: groups[cat] }))
   }, [filteredProducts, selectedCategory])
 
-  let featuredIndex = 0
   const gridItems = productGroups.flatMap(({ category, products: groupProducts }) => {
     const items = [
       <CategorySeparator key={`sep-${category}`} category={category} />,
-      ...groupProducts.map(product => {
-        const isFeatured = featuredIndex === 0
-        featuredIndex++
-        return (
-          <ProductCard
-            key={product.id}
-            product={product}
-            featured={isFeatured}
-          />
-        )
-      })
+      ...groupProducts.map(product => (
+        <ProductCard key={product.id} product={product} />
+      ))
     ]
     return items
   })

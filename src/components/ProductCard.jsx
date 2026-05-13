@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './ProductCard.css'
 
-function ProductCard({ product, featured = false }) {
+function ProductCard({ product }) {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [isHovered, setIsHovered] = useState(false)
   const hasEncendida = Boolean(product.imagenEncendida ?? product.imagenGif)
@@ -29,7 +29,7 @@ function ProductCard({ product, featured = false }) {
 
   return (
     <>
-      <div className={`product-card${featured ? ' featured' : ''}`}>
+      <div className="product-card">
         <div
           className={`product-image-container${product.textura ? ` texture-${product.textura}` : ''}${showGlow ? ' product-image-container--glow' : ''}`}
           onClick={handleImageClick}
