@@ -220,9 +220,9 @@ export const products = [
   },
   {
     id: 26,
-    nombre: "Vela degradé verde en vaso – formato amplio",
+    nombre: "Vela artesanal de soja en vaso de vidrio con fragmentos multicolor",
     descripcion:
-      "Vela artesanal en vaso de vidrio con delicado degradé verde y terminación minimalista. Pensada para ambientes cálidos, relajantes y sofisticados; decora con un toque natural y elegante. Diseño moderno que une armonía visual y calidez: ideal para regalar o disfrutar en momentos de relax. Hecha artesanalmente, con estética premium y natural; apta para decoración y aromaterapia.",
+      "Vela artesanal de soja en vaso de vidrio, diseñada con un acabado creativo y moderno de fragmentos multicolor que aportan textura y personalidad única. Su estilo artístico transforma cualquier espacio en un ambiente cálido, relajante y lleno de encanto. Ideal para decoración, regalos especiales o momentos de bienestar. Elaborada cuidadosamente a mano con materiales de calidad para una experiencia aromática y visual diferente.",
     precio: "13000",
     categoria: "velas",
     imagen: "/assets/26.jpeg",
