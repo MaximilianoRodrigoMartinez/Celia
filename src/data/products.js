@@ -238,6 +238,7 @@ export const products = [
     imagen: "/assets/27.jpeg",
     whatsapp: "5491122714366"
   },
+  /* Por ahora fuera de catálogo
   {
     id: 28,
     nombre: "Vela de soja Pomelo Kiwi con flores secas – presentación mediana",
@@ -247,7 +248,7 @@ export const products = [
     categoria: "velas",
     imagen: "/assets/28.jpeg",
     whatsapp: "5491122714366"
-  },
+  }, */
   {
     id: 29,
     nombre: "Vela artesanal multicapa",
