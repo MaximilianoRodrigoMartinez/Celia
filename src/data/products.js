@@ -230,25 +230,24 @@ export const products = [
   },
   {
     id: 27,
-    nombre: "Vela de soja Pomelo Kiwi con flores secas",
+    nombre: "Vela Pomelo Kiwi con flores secas",
     descripcion:
-      "Vela artesanal de soja con flores secas naturales y aroma Pomelo Kiwi: combinación fresca, cítrica y frutal que aporta energía y bienestar. Notas vibrantes de pomelo y la dulzura del kiwi generan una fragancia moderna, suave y refrescante. Decorada con flores secas para un estilo elegante, rústico y natural: ideal para armonizar espacios, regalar o momentos de relax.",
+      "Vela de soja con flores secas naturales y aroma Pomelo Kiwi. Combinación fresca, cítrica y frutal que llena el ambiente de energía y bienestar: notas vibrantes de pomelo y dulzura del kiwi en una fragancia moderna, suave y refrescante. Estilo elegante y rústico; ideal para armonizar espacios, regalar o disfrutar momentos de relax.",
     precio: "15000",
     categoria: "velas",
     imagen: "/assets/27.jpeg",
     whatsapp: "5491122714366"
   },
-  /* Por ahora fuera de catálogo
   {
     id: 28,
-    nombre: "Vela de soja Pomelo Kiwi con flores secas – presentación mediana",
+    nombre: "Vela Pomelo Kiwi en vaso reutilizable",
     descripcion:
-      "Vela artesanal de soja con flores secas naturales y aroma Pomelo Kiwi: combinación fresca, cítrica y frutal que aporta energía y bienestar. Notas vibrantes de pomelo y la dulzura del kiwi generan una fragancia moderna, suave y refrescante. Decorada con flores secas para un estilo elegante, rústico y natural: ideal para armonizar espacios, regalar o momentos de relax.",
+      "Combinación fresca, frutal y vibrante que llena el espacio de energía y bienestar. Las notas cítricas del pomelo se fusionan con la dulzura exótica del kiwi, creando un aroma moderno, alegre y delicadamente refrescante. Cera de soja en vaso de vidrio reutilizable, con detalles decorativos únicos que suman calidez y estilo. Ideal para aromatizar, regalar o crear una atmósfera relajante y fresca. Elaborada a mano con dedicación.",
     precio: "13000",
     categoria: "velas",
     imagen: "/assets/28.jpeg",
     whatsapp: "5491122714366"
-  }, */
+  },
   {
     id: 29,
     nombre: "Vela artesanal multicapa",
