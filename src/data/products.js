@@ -307,5 +307,15 @@ export const products = [
     categoria: "jabones",
     imagen: "/assets/34.jpeg",
     whatsapp: "5491122714366"
+  },
+  {
+    id: 35,
+    nombre: "Vela La magia está en vos",
+    descripcion:
+      "Vela aromática de soja pensada para crear momentos cálidos, relajantes y llenos de armonía. Su diseño floral y los detalles en tonos rosados aportan un estilo elegante y acogedor, ideal para decorar con una estética cálida y refinada. Perfecta para acompañar rituales, regalar o transformar cualquier rincón en un espacio de calma y bienestar. Elaborada artesanalmente con cera de soja, acabado delicado y minimalista.",
+    precio: "12000",
+    categoria: "velas",
+    imagen: "/assets/35.jpeg",
+    whatsapp: "5491122714366"
   }
 ]
