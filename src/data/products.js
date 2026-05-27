@@ -317,5 +317,15 @@ export const products = [
     categoria: "velas",
     imagen: "/assets/35.jpeg",
     whatsapp: "5491122714366"
+  },
+  {
+    id: 36,
+    nombre: "Vela de Soja Chakras",
+    descripcion:
+      "Creada artesanalmente con cera de soja, esta vela multicolor representa la armonía y el equilibrio de los 7 chakras. Cada capa de color simboliza energía, conexión y bienestar, convirtiéndola en una pieza única para decorar, meditar o regalar. Su diseño vibrante aporta calidez, intención y una atmósfera relajante a cualquier espacio. Hecha a mano, con cera de soja e inspirada en la energía de los chakras. Ideal para regalar, meditación y decoración espiritual.",
+    precio: "15000",
+    categoria: "velas",
+    imagen: "/assets/36.jpeg",
+    whatsapp: "5491122714366"
   }
 ]
